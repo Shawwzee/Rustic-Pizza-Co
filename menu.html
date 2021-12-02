@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+        integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css"
+        integrity="sha512-Velp0ebMKjcd9RiCoaHhLXkR1sFoCCWXNp6w4zj1hfMifYB5441C+sKeBl/T/Ka6NjBiRfBBQRaQq65ekYz3UQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Rustic Pizza Co.</title>
+</head>
+
+<body>
+
+    <!-- SHOWCASE WITH LOGO -->
+    <header id="home-section" class="">
+        <div class="dark-overlay">
+            <div class="container">
+                <div class="row">
+                    <div class="col mt-3 home-overlay d-flex justify-content-center">
+                        <a href="index.html"><img id="logo" src="img/Rustic Pizza.png" alt="Logo"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- NAV &  -->
+    <nav id="main-nav" class="navbar navbar-expand-md bg-primary navbar-dark sticky-top navbar-lg h4" id="main-nav">
+        <div class="container">
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a href="index.html" class="mx-2 nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="menu.html" class="mx-2 nav-link active">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="mx-2 nav-link">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="deals-section" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col text-center mx-auto">
+                    <h1 class="fancy">Deals</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card shadow bg-primary text-white">
+                        <div class="card-body">
+                            <h2 class="text-center fancy">Two for One Tuesdays</h2>
+                            <p class="text-center">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium libero in odio
+                                modi ab repellendus.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card shadow bg-primary text-white">
+                        <div class="card-body">
+                            <h2 class="text-center fancy">Fiver Friday</h2>
+                            <p class="text-center">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium libero in odio
+                                modi ab repellendus.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col text-center mt-4">
+                    <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio cumque, quos
+                        animi tempora
+                        repellendus earum assumenda soluta fugiat accusamus, et quaerat id in aut ab!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MENU SECTION -->
+    <section id="promise-section" class="py-5 bg-primary text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 text-center mx-auto">
+                    <h1 class="fancy">Our Menu</h1>
+                    <p class="lead">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus eius vitae accusantium
+                        blanditiis, aliquid reprehenderit unde quos ipsam doloribus non, neque commodi laboriosam
+                        nesciunt reiciendis voluptate repudiandae impedit! Doloremque, minus.
+                    </p>
+                </div>
+            </div>
+            <div class="row py-2 align-items-center">
+                <div class="col mx-auto">
+                    <img src="img/menu.png" class="img-fluid d-block" id="menuimg">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ALLERGY SECTION -->
+    <section id="promise-section" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 text-center mx-auto">
+                    <h1 class="fancy">Allergy or Dietary Needs?</h1>
+                    <p class="lead">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos nihil numquam tempora quasi
+                        reprehenderit ea!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer id="main-footer" class="bg-primary py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+
+                </div>
+                <div class="col-md-4">
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="col text-center text-white">
+                    <p>Copyright Rustic Pizza Co. &copy; <span id="year"></span></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+<!-- Jquery for Bootstrap -->
+<script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+
+<!-- Javascript for Bootstrap -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
+    integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+    crossorigin="anonymous"></script>
+
+<script src="index.js"></script>
+
+<!-- JS for Ekko -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.js"
+    integrity="sha512-YibiFIKqwi6sZFfPm5HNHQYemJwFbyyYHjrr3UT+VobMt/YBo1kBxgui5RWc4C3B4RJMYCdCAJkbXHt+irKfSA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+<script>
+    // Get the current year for the copyright
+    $('#year').text(new Date().getFullYear());
+
+    $(document).on('click', '[data-toggle="lightbox"]', function (event) {
+        event.preventDefault();
+        $(this).ekkoLightbox();
+    });
+</script>
+
+</html>

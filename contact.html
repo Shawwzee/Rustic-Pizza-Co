@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+        integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Rustic Pizza Co.</title>
+</head>
+
+<body>
+
+    <!-- SHOWCASE WITH LOGO -->
+    <header id="home-section" class="">
+        <div class="dark-overlay">
+            <div class="container">
+                <div class="row">
+                    <div class="col mt-3 home-overlay d-flex justify-content-center">
+                        <a href="index.html"><img id="logo" src="img/Rustic Pizza.png" alt="Logo"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- NAV &  -->
+    <nav id="main-nav" class="navbar navbar-expand-md bg-primary navbar-dark sticky-top navbar-lg h4" id="main-nav">
+        <div class="container">
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a href="index.html" class="mx-2 nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="menu.html" class="mx-2 nav-link">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="mx-2 nav-link active">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="p-3">
+        <div class="alert alert-success alert-dismissible fade text-center" role="alert" id="alert">
+            <strong>Email sent!</strong>
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+    </div>
+
+    <!-- CONTACT FORM -->
+    <section id="form">
+        <div class="container pb-5">
+            <div class="row">
+                <div class="col-md-6 mx-auto">
+                    <div class="card shadow p-2">
+                        <div class="card-title">
+                            <h1 class="text-center fancy">Enquiry Form</h1>
+                        </div>
+                        <div class="card-body">
+                            <form id="form">
+                                <div class="form-group">
+                                    <input id="name" type="text" class="form-control" placeholder="Full Name">
+                                </div>
+                                <div class="form-group">
+                                    <input id="contact" type="text" class="form-control" placeholder="Contact Number">
+                                </div>
+                                <div class="form-group">
+                                    <input id="guests" type="number" max="10" class="form-control"
+                                        placeholder="Number of Guests">
+                                </div>
+                                <div class="form-group">
+                                    <input id="date" type="date" max="10" class="form-control"">
+                                </div>
+                                <div class=" form-group">
+                                    <textarea class="form-control" name="Dietary" id="diet" cols="65" rows="10"
+                                        placeholder="Dietary Needs"></textarea>
+                                </div>
+                                <p class="text-center">
+                                    If we need more information about your booking, we will call you otherwise once
+                                    you've
+                                    been
+                                    booked in, we will send you an email confirming your booking. We look forward to
+                                    seeing
+                                    you!
+                                </p>
+                                <button class="btn btn-block btn-primary" href="" id="submit">Submit</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer id="main-footer" class="bg-primary py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+
+                </div>
+                <div class="col-md-4">
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="col text-center text-white">
+                    <p>Copyright Rustic Pizza Co. &copy; <span id="year"></span></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+
+<!-- Jquery for Bootstrap -->
+<script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+
+<!-- Javascript for Bootstrap -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
+    integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+    crossorigin="anonymous"></script>
+
+<script src="index.js"></script>
+
+
+<script>
+    // Get the current year for the copyright
+    $('#year').text(new Date().getFullYear());
+</script>
+
+</html>
